@@ -1,0 +1,3 @@
+#TYPE          WEEKLY    SLAVE    SOCKET                          PORT         MYCNF                             SECRET         INTERVAL
+mysqldump      All       {{ slave }}        {{ socket }}      {{ port }}         {{ defaults_file }}        pass4db        8
+xtrabackup     Null      {{ slave }}        {{ socket }}      {{ port }}         {{ defaults_file }}        pass4db        8
